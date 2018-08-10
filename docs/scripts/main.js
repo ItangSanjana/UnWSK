@@ -1,5 +1,5 @@
 /**
- *   Copyright [yyyy] [name of copyright owner]
+ *   Copyright 2018 Itang Sanjana
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -26,4 +26,16 @@
   }
 
   // Your custom JavaScript goes here
+  window.addEventListener('load', () => {
+    console.log('[navigator] onLine', navigator.onLine);
+
+    const navigatorOnLine = document.querySelector('.navigator-onLine');
+
+    if (navigator.onLine === true) {
+      navigatorOnLine.textContent = "Online";
+    }
+    else {
+      navigatorOnLine.textContent = "Offline";
+    }
+  });
 })();

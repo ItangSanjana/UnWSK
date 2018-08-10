@@ -3,11 +3,11 @@
 
 # TEAM
 
-  <name> -- <role> -- <url>
+  Itang Sanjana -- Developer -- https://itangsanjana.github.io
 
 # THANKS
 
-  <name>
+  All
 
 # TECHNOLOGY COLOPHON
 

@@ -1,0 +1,82 @@
+/**
+ *   Copyright 2018 Itang Sanjana
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ */
+
+/* Responsive */
+embed, img, object, video {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  display: grid;
+  grid-gap: .5rem;
+  margin: .5rem;
+  min-height: calc(100vh - 1rem);
+  width: calc(100% - 1rem);
+}
+
+header {
+  background-color: #3171e1;
+  color: white;
+  padding: .5rem;
+}
+
+header strong {
+  vertical-align: middle;
+}
+
+nav {
+  background-color: whitesmoke;
+  padding: .5rem;
+}
+
+nav a {
+  white-space: nowrap;
+}
+
+footer {
+  background-color: darkslategrey;
+  color: white;
+  padding: .5rem;
+}
+
+footer a {
+  color: lightgrey;
+}
+
+/* Small media */
+@media (max-width: 425px) {
+  body {
+    grid-template-rows: min-content min-content 1fr min-content;
+  }
+}
+
+/* Large media */
+@media (min-width: 426px) {
+  body {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  nav {
+    grid-row: span 2;
+  }
+}

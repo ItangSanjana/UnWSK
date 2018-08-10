@@ -1,6 +1,6 @@
 {
-  "background_color": "",
-  "description": "",
+  "background_color": "#3E4EB8",
+  "description": "UnWSK's not Web Starter Kit.",
   "display": "standalone",
   "icons": [
     {
@@ -14,8 +14,8 @@
       "type": "image/png"
     }
   ],
-  "name": "",
-  "short_name": "",
+  "name": "UnWSK",
+  "short_name": "UnWSK",
   "start_url": "index.html?homescreen=1",
-  "theme_color": ""
+  "theme_color": "#2F3BA2"
 }
